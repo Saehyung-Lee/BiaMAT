@@ -1,0 +1,34 @@
+{
+  "_comment": "===== MODEL CONFIGURATION =====",
+  "model_dir": "models/model",
+
+  "_comment": "===== DATASET CONFIGURATION =====",
+  "data_path_10": "data/cifar-10-batches-py",
+  "data_path_100": "data/cifar100/cifar-100-python",
+  "data_path_imagenet": "data/Imagenet32_train",
+
+  "_comment": "===== TRAINING CONFIGURATION =====",
+  "tf_random_seed": 451760341,
+  "np_random_seed": 216105420,
+  "max_num_training_steps": 39000,
+  "num_output_steps": 780,
+  "num_summary_steps": 780,
+  "num_checkpoint_steps": 780,
+  "training_batch_size": 256,
+  "step_size_schedule": [[0, 0.1], [23400, 0.01], [35100, 0.001]],
+  "weight_decay": 0.0002,
+  "momentum": 0.9,
+
+  "_comment": "===== EVAL CONFIGURATION =====",
+  "num_eval_examples": 10000,
+  "eval_batch_size": 200,
+  "eval_on_cpu": false,
+
+  "_comment": "=====ADVERSARIAL EXAMPLES CONFIGURATION=====",
+  "epsilon": 8.0,
+  "num_steps": 10,
+  "step_size": 2.0,
+  "random_start": true,
+  "loss_func": "xent",
+  "store_adv_path": "attack.npy"
+}
