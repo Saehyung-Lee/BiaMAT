@@ -1,6 +1,6 @@
 # Biased Multi-domain Adversarial Training
 
-This repository is the official implementation of Biased Multi-domain Adversarial Training (WACV 2023).
+This repository is the official implementation of [Biased Multi-domain Adversarial Training](https://arxiv.org/abs/2209.14053) (WACV 2023).
 
 ## Auxiliary dataset
 
